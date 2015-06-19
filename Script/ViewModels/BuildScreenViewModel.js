@@ -58,6 +58,8 @@
     self.loadMainBuildStatus = function () {
         self.isLoading(true);
         $.getJSON(Settings.buildStatusUrl + Utils.getTsQSParam(), function (data) {
+            if(data.state=='running')
+                data.status="BUILDING";
             self.mainBuild(ko.mapping.fromJS(data, {
                 create: function(options) {
                     return new MainBuildViewModel(options.data, self.buildTypes());

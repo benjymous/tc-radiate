@@ -201,6 +201,18 @@ ul {
     #main-build.unknown.c1, #main-build.unknown.c3, #main-build.unknown.c5, #main-build.unknown.c7, #main-build.unknown.c9, #main-build.unknown.c11 {
         background-image: url('./images/unknown2.png');
     }
+    
+    #main-build.running.c0, #main-build.running.c3, #main-build.running.c6, #main-build.running.c9  {
+        background-image: url('./images/running1.png');
+    }
+
+    #main-build.running.c1, #main-build.running.c4, #main-build.running.c7, #main-build.running.c10 {
+        background-image: url('./images/running2.png');
+    }
+    
+    #main-build.running.c2, #main-build.running.c5, #main-build.running.c8, #main-build.running.c11 {
+        background-image: url('./images/running3.png');
+    }
 
 #main-branch-name {
     font-size: 2em;

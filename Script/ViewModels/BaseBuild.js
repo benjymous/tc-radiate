@@ -9,6 +9,8 @@
         self.lowerStatus = ko.computed(function () {
             if(!this.status || this.status() == null)
                 return 'unknown';
+            if(this.isRunning && this.isRunning())
+                return 'running';
             return this.status().toLowerCase();
         }, self);
 
