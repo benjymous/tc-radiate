@@ -103,6 +103,7 @@ ul {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-color: gray;
+    background-size: contain;
 }
 
     #main-build.success.c0 {
